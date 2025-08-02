@@ -815,4 +815,4 @@ async def on_raw_reaction_remove(payload: discord.RawReactionActionEvent):
                     pass
 
 
-client.run('MTQwMDUzMzY5MTQ3Mzg1NDU5NA.GYd87Z.z3yLgbjhSapz250UZMacsMts8xdZfqURWm9uxY')
+client.run(token)
