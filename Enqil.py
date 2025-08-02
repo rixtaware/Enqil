@@ -8,7 +8,7 @@ from discord import Embed
 from discord.ui import View, Button
 from discord.ui import View, Button, Modal, TextInput
 from discord.utils import get
-
+import os
 
 # Set your guild ID here
 MY_GUILD = discord.Object(id=1399429382766071808)
@@ -814,5 +814,5 @@ async def on_raw_reaction_remove(payload: discord.RawReactionActionEvent):
                 except discord.Forbidden:
                     pass
 
-
+token = os.getenv("token")
 client.run(token)
